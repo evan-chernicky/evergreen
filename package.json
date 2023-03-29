@@ -1,0 +1,30 @@
+{
+  "name": "evergreen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch ./src/scss/styles.scss ./src/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evan-chernicky/evergreen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evan-chernicky/evergreen/issues"
+  },
+  "homepage": "https://github.com/evan-chernicky/evergreen#readme",
+  "dependencies": {
+    "bourbon": "^7.3.0",
+    "modern-normalize": "^1.1.0",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "eyeglass": "^3.0.3",
+    "my_eyeglass_module": "^0.0.1-security"
+  }
+}
