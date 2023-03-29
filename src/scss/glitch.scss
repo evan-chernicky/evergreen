@@ -3,7 +3,8 @@ body {
 }
 
 .logo-wrap {
-    width: 375px;
+    max-width: 375px;
+    padding: 30px;
     position:absolute;
     left: 0;
     right: 0;
