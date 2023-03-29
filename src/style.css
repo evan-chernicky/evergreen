@@ -1,14 +1,12 @@
 body {
-  background: #000; 
-  margin: 0;
-}
+  background: #000; }
 
 .logo-wrap {
-  width: 200px;
+  width: 375px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: -11%;
   bottom: 0;
   margin: auto;
   max-height: min-content; }
@@ -179,13 +177,13 @@ body {
   position: relative;
   width: var(--glitch-width);
   max-width: 102px;
-  height: 206px;
+  height: 129px;
   max-height: calc(199px * 1.25);
   overflow: hidden;
   left: 0;
   right: 0;
   margin: auto;
-  margin-bottom: 30px; }
+  margin-bottom: 17px; }
 
 .glitch__img {
   position: absolute;
@@ -193,9 +191,9 @@ body {
   left: calc(-1 * var(--gap-horizontal));
   width: calc(100% + var(--gap-horizontal) * 2);
   height: calc(100% + var(--gap-vertical) * 2);
-  background: url(../../assets/tree-symbol.svg) no-repeat 50% 0;
+  background: url(../../assets/tree-symbol.svg) no-repeat 50% 100%;
   background-color: var(--blend-color-1);
-  background-size: cover;
+  background-size: contain;
   transform: translate3d(0, 0, 0);
   background-blend-mode: var(--blend-mode-1); }
 
@@ -583,9 +581,10 @@ body {
   overflow: hidden; }
 
 .image {
-  background-image: url("../../assets/mountain.jpg");
-  background-size: cover;
-  background-position: center center; }
+  background-image: url("../../assets/tree.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .bg {
   position: absolute;
@@ -596,36 +595,36 @@ body {
 
 @-webkit-keyframes zoom-a {
   0% {
-    background-size: 500% auto; }
+    background-size: auto 500%; }
   100% {
-    background-size: 100% auto; } }
+    background-size: auto 100%; } }
 
 @-moz-keyframes zoom-a {
   0% {
-    background-size: 500% auto; }
+    background-size: auto 500%; }
   100% {
-    background-size: 100% auto; } }
+    background-size: auto 100%; } }
 
 @-o-keyframes zoom-a {
   0% {
-    background-size: 500% auto; }
+    background-size: auto 500%; }
   100% {
-    background-size: 100% auto; } }
+    background-size: auto 100%; } }
 
 @keyframes zoom-a {
   0% {
-    background-size: 500% auto; }
+    background-size: auto 500%; }
   100% {
-    background-size: 100% auto; } }
+    background-size: auto 100%; } }
 
 .type-a {
-  -webkit-animation: zoom-a 8s ease-out alternate;
+  -webkit-animation: zoom-a 8s ease-out forwards alternate;
   /* Safari 4+ */
-  -moz-animation: zoom-a 8s ease-out alternate;
+  -moz-animation: zoom-a 8s ease-out forwards alternate;
   /* Fx 5+ */
-  -o-animation: zoom-a 8s ease-out alternate;
+  -o-animation: zoom-a 8s ease-out forwards alternate;
   /* Opera 12+ */
-  animation: zoom-a 8s ease-out alternate;
+  animation: zoom-a 8s ease-out forwards alternate;
   /* IE 10+, Fx 29+ */ }
 
 @-webkit-keyframes zoom-b {
@@ -659,13 +658,3 @@ body {
   100% {
     -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2) translateZ(1px); } }
-
-.type-b {
-  -webkit-animation: zoom-b 10s linear infinite alternate;
-  /* Safari 4+ */
-  -moz-animation: zoom-b 10s linear infinite alternate;
-  /* Fx 5+ */
-  -o-animation: zoom-b 10s linear infinite alternate;
-  /* Opera 12+ */
-  animation: zoom-b 10s linear infinite alternate;
-  /* IE 10+, Fx 29+ */ }

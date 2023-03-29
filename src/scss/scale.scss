@@ -6,9 +6,10 @@
     overflow: hidden;
   }
   .image {
-    background-image: url('../../assets/mountain.jpg');
-    background-size: cover;
+    background-image: url('../../assets/tree.png');
+    background-size: contain;
     background-position: center center;
+    background-repeat: no-repeat;
   }
   .bg {
     position: absolute;
@@ -18,26 +19,26 @@
     left: 0px;
   }
   @-webkit-keyframes zoom-a {
-      0% { background-size: 500% auto; }
-      100% { background-size: 100% auto; }
+      0% { background-size: auto 500%; }
+      100% { background-size: auto 100%; }
   }
   @-moz-keyframes zoom-a {
-      0% { background-size: 500% auto; }
-      100% { background-size: 100% auto; }
+      0% { background-size: auto 500%; }
+      100% { background-size: auto 100%; }
   }
   @-o-keyframes zoom-a {
-      0% { background-size: 500% auto; }
-      100% { background-size: 100% auto; }
+      0% { background-size: auto 500%; }
+      100% { background-size: auto 100%; }
   }
   @keyframes zoom-a {
-      0% { background-size: 500% auto; }
-      100% { background-size: 100% auto; }
+      0% { background-size: auto 500%; }
+      100% { background-size: auto 100%; }
   }
   .type-a {
-    -webkit-animation: zoom-a 8s ease-out alternate; /* Safari 4+ */
-    -moz-animation:    zoom-a 8s ease-out alternate; /* Fx 5+ */
-    -o-animation:      zoom-a 8s ease-out alternate; /* Opera 12+ */
-    animation:         zoom-a 8s ease-out alternate; /* IE 10+, Fx 29+ */
+    -webkit-animation: zoom-a 8s ease-out forwards alternate; /* Safari 4+ */
+    -moz-animation:    zoom-a 8s ease-out forwards alternate; /* Fx 5+ */
+    -o-animation:      zoom-a 8s ease-out forwards alternate; /* Opera 12+ */
+    animation:         zoom-a 8s ease-out forwards alternate; /* IE 10+, Fx 29+ */
   }
   @-webkit-keyframes zoom-b {
       0% {
@@ -79,9 +80,9 @@
       transform: scale(1.2, 1.2) translateZ(1px);
     }
   }
-  .type-b {
-    -webkit-animation: zoom-b 10s linear infinite alternate; /* Safari 4+ */
-    -moz-animation:    zoom-b 10s linear infinite alternate; /* Fx 5+ */
-    -o-animation:      zoom-b 10s linear infinite alternate; /* Opera 12+ */
-    animation:         zoom-b 10s linear infinite alternate; /* IE 10+, Fx 29+ */
-  }
+//   .type-b {
+//     -webkit-animation: zoom-b 10s linear infinite alternate; /* Safari 4+ */
+//     -moz-animation:    zoom-b 10s linear infinite alternate; /* Fx 5+ */
+//     -o-animation:      zoom-b 10s linear infinite alternate; /* Opera 12+ */
+//     animation:         zoom-b 10s linear infinite alternate; /* IE 10+, Fx 29+ */
+//   }

@@ -3,11 +3,11 @@ body {
 }
 
 .logo-wrap {
-    width:200px;
+    width: 375px;
     position:absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: -11%;
     bottom: 0;
     margin: auto;
     max-height: min-content;
@@ -185,13 +185,13 @@ body {
     position: relative;
     width: var(--glitch-width);
     max-width: 102px;
-    height: 206px;
+    height: 129px;
     max-height: calc(199px * 1.25);
     overflow: hidden;
     left: 0;
     right: 0;
     margin: auto;
-    margin-bottom:30px;
+    margin-bottom:17px;
 }
 
 .glitch__img {
@@ -200,9 +200,9 @@ body {
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url(../../assets/tree-symbol.svg) no-repeat 50% 0;
+	background: url(../../assets/tree-symbol.svg) no-repeat 50% 100%;
 	background-color: var(--blend-color-1);
-	background-size: cover;
+	background-size: contain;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
 }
