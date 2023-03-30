@@ -35,10 +35,10 @@
       100% { background-size: auto 100%; }
   }
   .type-a {
-    -webkit-animation: zoom-a 8s ease-out forwards alternate; /* Safari 4+ */
-    -moz-animation:    zoom-a 8s ease-out forwards alternate; /* Fx 5+ */
-    -o-animation:      zoom-a 8s ease-out forwards alternate; /* Opera 12+ */
-    animation:         zoom-a 8s ease-out forwards alternate; /* IE 10+, Fx 29+ */
+    -webkit-animation: zoom-a 4s ease-out forwards alternate; /* Safari 4+ */
+    -moz-animation:    zoom-a 4s ease-out forwards alternate; /* Fx 5+ */
+    -o-animation:      zoom-a 4s ease-out forwards alternate; /* Opera 12+ */
+    animation:         zoom-a 4s ease-out forwards alternate; /* IE 10+, Fx 29+ */
   }
   @-webkit-keyframes zoom-b {
       0% {

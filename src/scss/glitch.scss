@@ -27,9 +27,9 @@ body {
 }
 
 .glitch--style-1 {
-	--gap-horizontal: 20px;
+	--gap-horizontal: 10px;
 	--gap-vertical: 2px;
-	--time-anim: 2.25s;
+	--time-anim: 2.5s;
 	--blend-mode-1: none;
 	--blend-mode-2: none;
 	--blend-mode-3: none;
@@ -193,6 +193,7 @@ body {
     right: 0;
     margin: auto;
     margin-bottom:17px;
+    animation-iteration-count: 2 !important;
 }
 
 .glitch__img {
@@ -201,7 +202,7 @@ body {
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url(../../assets/tree-symbol.svg) no-repeat 50% 100%;
+	background: url(../../assets/tree-symbol-icon.svg) no-repeat 50% 100%;
 	background-color: var(--blend-color-1);
 	background-size: contain;
 	transform: translate3d(0,0,0);
@@ -264,38 +265,38 @@ body {
 /* Hover animations for horizontal case */
 .glitch .glitch__img:nth-child(2) {
 	transform: translate3d(var(--gap-horizontal),0,0);
-	animation: glitch-anim-1-horizontal var(--time-anim) infinite linear alternate;
+	animation: glitch-anim-1-horizontal var(--time-anim) both linear alternate;
 }
 
 .glitch > .glitch__img:nth-child(3) {
 	transform: translate3d(calc(-1 * var(--gap-horizontal)),0,0);
-	animation: glitch-anim-2-horizontal var(--time-anim) infinite linear alternate;
+	animation: glitch-anim-2-horizontal var(--time-anim) both linear alternate;
 }
 
 .glitch > .glitch__img:nth-child(4) {
 	transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1,-1,1);
-	animation: glitch-anim-3-horizontal var(--time-anim) infinite linear alternate;
+	animation: glitch-anim-3-horizontal var(--time-anim) both linear alternate;
 }
 
 /* Hover animations for vertical case */
 .glitch--vertical .glitch__img:nth-child(2) {
 	transform: translate3d(0, var(--gap-vertical), 0);
-	animation: glitch-anim-1-vertical var(--time-anim) infinite linear alternate;
+	animation: glitch-anim-1-vertical var(--time-anim) both linear alternate;
 }
 
 .glitch--vertical > .glitch__img:nth-child(3) {
 	transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0);
-	animation: glitch-anim-2-vertical var(--time-anim) infinite linear alternate;
+	animation: glitch-anim-2-vertical var(--time-anim) both linear alternate;
 }
 
 .glitch--vertical > .glitch__img:nth-child(4) {
 	transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0) scale3d(-1,-1,1);
-	animation: glitch-anim-3-vertical var(--time-anim) infinite linear alternate;
+	animation: glitch-anim-3-vertical var(--time-anim) both linear alternate;
 }
 
 /* Hover flash animation on last image */
 .glitch > .glitch__img:nth-child(5) {
-	animation: glitch-anim-flash 0.5s steps(1,end) infinite;
+	animation: glitch-anim-flash 0.5s steps(1,end) both;
 }
 
 /* Animations */
@@ -345,6 +346,7 @@ body {
 	100% {
 		-webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 		clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+        opacity: 0;
 	}
 }
 
@@ -392,6 +394,7 @@ body {
 	100% {
 		-webkit-clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
 		clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
+        opacity: 0;
 	}
 }
 
@@ -471,6 +474,7 @@ body {
 	100% {
 		-webkit-clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
 		clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
+        opacity: 0;
 	}
 }
 
@@ -519,6 +523,7 @@ body {
 	100% {
 		-webkit-clip-path: polygon(70% 0, 80% 0, 80% 100%, 70% 100%);
 		clip-path: polygon(70% 0, 80% 0, 80% 100%, 70% 100%);
+        opacity: 0;
 	}
 }
 
@@ -566,6 +571,7 @@ body {
 	100% {
 		-webkit-clip-path: polygon(14% 0, 33% 0, 33% 100%, 14% 100%);
 		clip-path: polygon(14% 0, 33% 0, 33% 100%, 14% 100%);
+        opacity: 0;
 	}
 }
 
@@ -645,6 +651,8 @@ body {
 	100% {
 		-webkit-clip-path: polygon(70% 0, 71% 0, 71% 100%, 70% 100%);
 		clip-path: polygon(70% 0, 71% 0, 71% 100%, 70% 100%);
+        opacity: 0;
+
 	}
 }
 
