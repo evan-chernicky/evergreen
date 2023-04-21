@@ -2,8 +2,9 @@ body {
     background: #000;
 }
 
-.logo-wrap {
-    max-width: 375px;
+.logo-wrap img {
+    width: 375px;
+	max-width: 100%;
     padding: 30px;
     position:absolute;
     left: 0;
